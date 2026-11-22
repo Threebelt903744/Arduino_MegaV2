@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "author": "Exported from Mokxi",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-mega",
+      "id": "mega25601",
+      "top": 422.4,
+      "left": 336,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ky-040",
+      "id": "rotary1",
+      "top": 38.4,
+      "left": 316.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ky-040",
+      "id": "rotary2",
+      "top": 38.4,
+      "left": 451.2,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ky-040",
+      "id": "rotary3",
+      "top": 38.4,
+      "left": 576,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "mega25601:18",
+      "rotary2:CLK",
+      "green",
+      []
+    ],
+    [
+      "mega25601:19",
+      "rotary2:DT",
+      "green",
+      []
+    ],
+    [
+      "mega25601:2",
+      "rotary1:CLK",
+      "green",
+      []
+    ],
+    [
+      "mega25601:20",
+      "rotary3:CLK",
+      "green",
+      []
+    ],
+    [
+      "mega25601:21",
+      "rotary3:DT",
+      "green",
+      []
+    ],
+    [
+      "mega25601:3",
+      "rotary1:DT",
+      "green",
+      []
+    ],
+    [
+      "mega25601:5V.1",
+      "rotary1:VCC",
+      "red",
+      []
+    ],
+    [
+      "mega25601:GND.1",
+      "rotary1:GND",
+      "black",
+      []
+    ],
+    [
+      "rotary1:GND",
+      "rotary2:GND",
+      "black",
+      []
+    ],
+    [
+      "rotary1:VCC",
+      "rotary2:VCC",
+      "red",
+      []
+    ],
+    [
+      "rotary2:GND",
+      "rotary3:GND",
+      "black",
+      []
+    ],
+    [
+      "rotary2:VCC",
+      "rotary3:VCC",
+      "red",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
